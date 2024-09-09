@@ -6,7 +6,7 @@ import Footer from "../../componentes/Footer";
 export default function Sabores() {
 
   return(
-    <div>
+    <div className='sabores'>
 
       <Header />
 

@@ -1,5 +1,5 @@
 .banner {
-    width: 100%;
+    width: 100;
     height: 60rem;
     background-color: #f9db79;
     background-image: url('/public/assets/banner-home.png');
@@ -79,4 +79,67 @@ h1 {
 
 .flavours img, .events img, .about img{
     width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .container, .flavours, .events, .about {
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container, .flavours, .events, .about {
+        height: 30vh;
+    }
+
+    .flavoursText {
+        width: 50vw;
+    }
+
+    .flavoursText h2, .eventsText h2, .aboutText h2{
+        font-size: 20px;
+    }
+
+    .flavoursText h3, .eventsText h3, .aboutText h3 {
+        font-size: 16px;
+    }
+
+    .flavoursText p, .eventsText p, .aboutText p {
+        width: 45vw;
+        font-size: 13px;
+        line-height: normal;
+        margin-top: 8px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .banner {
+        width: 102vw;
+    }
+
+    .flavours, .about, .events {
+        height: 80vh;
+    }
+
+    .flavours {
+        width: 102vw;
+    }
+
+    .flavours .container {
+        width: 102vw;
+    }
+
+    .flavoursImage, .eventsImage, .aboutImage {
+        width: 102vw;
+        height: 50vh;
+    }
+
+    .flavoursText, .eventsText, .aboutText {
+        width: 100vw;
+    }
+
+    .flavoursText p, .eventsText p, .aboutText p{
+        width: 80vw;
+        font-size: 16px;
+    }
 }
